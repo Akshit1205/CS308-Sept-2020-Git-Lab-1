@@ -9,32 +9,26 @@ bool valid(int n)  {
 		return false;
 	return true;
 }
-void negsqr(int n)  {
-	n = -1 * n;
-	printf("Sqrt of %d is %fi\n", n, sqrt(n));
-	printf("End of program. Exiting\n");
-	return;
-}
 
 //Akshit Kumar(B18045)
 
 int main(int argc, char* argv[]) {
 
 	if (argc != 2) {
-		printf("Usage: sqrt input\n\n");
+		printf("NEGSUPPORT:Usage: sqrt input\n\n");
 		exit(-1);
 	}
 
 	int input = atoi(argv[1]);
 	if (!valid(input)) {
-		printf("Negative Number\n");
-		printf("End of program. Exiting\n");
-		negsqr(input);
+		printf("NEGSUPPORT:Negative Number\n");
+		printf("NEGSUPPORT:End of program. Exiting\n");
 		return (0);
 	}
 
-	printf("Sqrt of %d is %f\n",input,sqrt(input));
-	printf("End of program. Exiting!!\n");
+	printf("NEGSUPPORT:Sqrt of %d is %f\n",input,sqrt(input));
+	printf("NEGSUPPORT:End of program. Exiting\n");
 	return(0);
 
 } // end main
+
